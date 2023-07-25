@@ -8,6 +8,7 @@ import {
 import logo from "./logo.svg";
 import "./App.css";
 import UseMemoCase from "./use-cases/UseMemoCase";
+import UseRefCase from "./use-cases/UseRefCase";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           }
         />
         <Route path="/use-memo" element={<UseMemoCase />} />
+        <Route path="/use-ref" element={<UseRefCase />} />
       </Routes>
     </Router>
   );
