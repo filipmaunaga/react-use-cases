@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from 'react';
 
 const UseMemoCase = (): JSX.Element => {
   const [number, setNumber] = useState<number>(0);
@@ -7,20 +7,20 @@ const UseMemoCase = (): JSX.Element => {
   //   second use case of useMemo -- referential equality
   const themeStyles = useMemo(() => {
     return {
-      backgroundColor: darkTheme ? "black" : "white",
-      color: darkTheme ? "white" : "black",
+      backgroundColor: darkTheme ? 'black' : 'white',
+      color: darkTheme ? 'white' : 'black',
     };
   }, [darkTheme]);
 
   useEffect(() => {
-    console.log("theme changed");
+    console.log('theme changed');
   }, [themeStyles]);
 
   const divStyle = {
-    display: "flex",
-    flexDirection: "column" as "column",
-    width: "400px",
-    margin: "20px auto",
+    display: 'flex',
+    flexDirection: 'column' as 'column',
+    width: '400px',
+    margin: '20px auto',
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -43,7 +43,7 @@ const UseMemoCase = (): JSX.Element => {
 
   return (
     <div style={divStyle}>
-      <input type="number" value={number} onChange={handleChange} />
+      <input type='number' value={number} onChange={handleChange} />
       <button onClick={handleClick}>Change theme</button>
       <div style={themeStyles}>{doubleValue}</div>
     </div>

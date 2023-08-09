@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const List = ({
   getItems,
@@ -9,7 +9,7 @@ const List = ({
 
   useEffect(() => {
     setItems(getItems(5));
-    console.log("update");
+    console.log('update');
   }, [getItems]);
   return (
     <>

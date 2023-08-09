@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from "react";
-import List from "./List";
+import React, { useCallback, useState } from 'react';
+import List from './List';
 
 const UseCallbackCase = (): JSX.Element => {
   const [count, setCount] = useState(1);
@@ -13,14 +13,14 @@ const UseCallbackCase = (): JSX.Element => {
   );
 
   const divStyle = {
-    backgroundColor: darkTheme ? "black" : "white",
-    color: darkTheme ? "white" : "black",
+    backgroundColor: darkTheme ? 'black' : 'white',
+    color: darkTheme ? 'white' : 'black',
   };
 
   return (
     <div style={divStyle}>
       <input
-        type="number"
+        type='number'
         value={count}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setCount(parseInt(e.target.value))

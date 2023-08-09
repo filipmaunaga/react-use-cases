@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 
 const UseRefCase = (): JSX.Element => {
-  const [text, setText] = useState<string>("");
+  const [text, setText] = useState<string>('');
   const renderCount = useRef(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const prevName = useRef("");
+  const prevName = useRef('');
 
   useEffect(() => {
     renderCount.current = renderCount.current + 1;
